@@ -6,33 +6,29 @@ module.exports = {
 
   ],
   theme: {
-    extend: {},
-    screens: {
-      xs: '480px',
-      sm: '768px',
-      md: '992px',
-      lg: '1024px',
-      xl: '1440px',
+    extend: {
     },
+    // our colors theme
+    colors: {
+      'primary': '#c00a27',
+      'secondary': '#f4b618',
+      'white': '#ffffff',
+      'black': '#3a3a3a',
+      'gray': '#686464',
+    },
+
     container: {
       center: true,
+      screens: {
+        sm: '600px',
+        md: '728px',
+        lg: '984px',
+        xl: '1240px',
+        '2xl': '1496px',
+      },
     },
-    listStyleType: {
-      none: 'none',
-      disc: 'disc',
-      decimal: 'decimal',
-      square: 'square',
-      roman: 'upper-roman',
-    }
-    ,
-
-    colors: {
-      primaryCol: "#DA3C3C",
-      secondaryCol: "#C13030",
-      textCol: "#191919"
 
 
-    },
   },
 
   plugins: [],
