@@ -1,16 +1,8 @@
-import { Button } from '@mui/material';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 const App = () => {
   return (
-    <div>
-      <h2>Hello</h2>
-      <div className="bg-red-500">
-        <Button variant="contained" sx={{ backgroundColor: '#008000' }}>
-          Contained
-        </Button>
-        <AccountCircleIcon />
-      </div>
+    <div className='container border-4 border-red-500'>
+      <h2 className='text-4xl font-bold'>Are you excited to get started</h2>
     </div>
   );
 };
