@@ -1,23 +1,23 @@
-import { Link, NavLink } from "react-router-dom"
+import { Link } from "react-router-dom"
 import logo from '../assets/logo_3.avif';
-import { useEffect, useState } from "react";
+//import { useEffect, useState } from "react";
 
 const Navbar = () => {
-    let activeStyle = {
+    // let activeStyle = {
 
-        borderBottom: '2px solid #90C347'
-    };
+    //     borderBottom: '2px solid #90C347'
+    // };
 
     //sticky nav on scroll
     //sticky nav
-    const [stickyNav, setStickyNav] = useState(false);
+    // const [stickyNav, setStickyNav] = useState(false);
 
-    useEffect(() => {
-        window.onscroll = () => {
-            setStickyNav(window.pageYOffset === 0 ? false : true);
-            return () => (window.onscroll = null);
-        };
-    }, []);
+    // useEffect(() => {
+    //     window.onscroll = () => {
+    //         setStickyNav(window.pageYOffset === 0 ? false : true);
+    //         return () => (window.onscroll = null);
+    //     };
+    // }, []);
     return (
         <div>
             <nav className={` w-full  top-0 right-0 left-0 z-[10] py-5 md:py-2 text-[#FFF]  flex  items-center justify-between md:mx-auto px-10 md:px-[103px] bottom_border ${stickyNav ? 'bg-white fixed shadow-md shadow-gray-200' : 'bg-white'}`}
@@ -136,6 +136,15 @@ const Navbar = () => {
 
                 <div className="hidden w-full lg:block md:w-auto" id="navbar-multi-level">
                     <ul className='flex gap-4 items-center justify-between py-6'>
+                        <li><Link to="/">Home</Link></li>
+                        <li><span>Italian</span></li>
+                        <li><span>Indian</span></li>
+                        <li><span>Thai</span></li>
+
+                        <li><span>Chinese</span></li>
+                        <li><Link to="/shop">Home</Link></li>
+                        <li><span>Pages</span></li>
+
 
                         {/* <li
 

@@ -1,16 +1,8 @@
-import Footer from "./shared/Footer";
-import Navbar from "./shared/Navbar";
+import { RouterProvider } from 'react-router-dom';
+import { router } from './routes/routes';
 
 const App = () => {
-  return (
-    <div>
-      <Navbar />
-
-
-      this is a testing
-      <Footer />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default App;
