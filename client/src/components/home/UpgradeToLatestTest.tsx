@@ -1,5 +1,4 @@
 import bg_1 from '../../assets/bg/bg-1.webp';
-import paper from '../../assets/Common/paper-design.webp';
 import signature from '../../assets/signature.webp';
 
 const UpgradeToLatestTest = () => {
