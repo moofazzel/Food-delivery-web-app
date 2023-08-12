@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.dropdown_wrapper_1,
+.dropdown_wrapper_2,
+.dropdown_wrapper_3 {
+    position: absolute;
+    width: 700px;
+    background: #fff;
+    padding: 40px;
+    z-index: 99;
+    top: 65px;
+    left: -158%;
+    box-shadow: 0 2px 10px #999999a8;
+    border-radius: 5px;
+    transition: all 0.35s;
+    opacity: 0;
+    visibility: visible;
+
+}
+
+.menu_it_1:hover .dropdown_wrapper_1 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu_it_2:hover .dropdown_wrapper_2 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu_it_3:hover .dropdown_wrapper_3 {
+    opacity: 1;
+    visibility: visible;
+}
+
+ul.mega_item_1 li a,
+ul.mega_item_2 li a,
+ul.mega_item_3 li a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #111;
+    margin-bottom: 9px;
+    display: block;
+}

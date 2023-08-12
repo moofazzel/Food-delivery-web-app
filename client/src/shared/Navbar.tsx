@@ -5,6 +5,7 @@ import { HiOutlineUserCircle } from 'react-icons/hi';
 import { LiaShoppingBagSolid } from 'react-icons/lia';
 import { BiSearch } from 'react-icons/bi';
 import { FaRegHeart } from 'react-icons/fa';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const Navbar = () => {
     // let activeStyle = {
@@ -30,122 +31,115 @@ const Navbar = () => {
                 {/* brand logo */}
                 <Link to={"/"}><img className='w-[90px] h-[90px] ' src={logo}></img></Link>
 
-                {/* mobile nav */}
-                {/* <div
 
-                className="responsive_menu "
-
-            >
-                <button
-                    onClick={handleToggle}
-                    className="hamburger_icon text-darkBlack">
-                    <GiHamburgerMenu />
-                </button>
-                <div
-                    ref={navWrapper}
-                    className={`side_nav shadow-lg shadow-gray-300 ${isOpen == true ? 'active' : ''}`}
-
-                >
-                    <button
-                        className="close_btn "
-                        onClick={handleToggle}
-                    >
-                        <AiFillCloseCircle />
-                    </button>
-                    <ul className="mobile_menu">
-
-                        <li>
-                            <a
-                                href="/"
-                                className='text-textColor p-2 uppercase text-[13px] hover:border-b-2 hover:border-[#90C347] transition'
-
-
-                            >Home</a>
-                        </li>
-                        <li >
-                            <a
-                                href="/about"
-                                className='text-textColor p-2 uppercase text-[13px] hover:border-b-2 hover:border-[#90C347] transition'
-
-
-
-                            >
-                                About Us
-                            </a>
-                        </li>
-
-                        <li >
-                            <a
-                                href="/products"
-                                className='text-textColor p-2 uppercase text-[13px] hover:border-b-2 hover:border-[#90C347] transition'
-
-
-
-                            >
-                                Our Products
-                            </a>
-                        </li>
-                        <li >
-                            <a
-                                href="/news-media"
-                                className='text-textColor p-2 uppercase text-[13px] hover:border-b-2 hover:border-[#90C347] transition'
-
-
-
-                            >
-                                News and Media
-                            </a>
-                        </li>
-                        <li >
-                            <a
-                                href="/blogs"
-                                className='text-textColor p-2 uppercase text-[13px] hover:border-b-2 hover:border-[#90C347] transition'
-
-
-
-                            >
-                                Blogs
-                            </a>
-                        </li>
-                        <li >
-                            <a
-                                href="/adminDashboard"
-                                className='text-textColor p-2 uppercase text-[13px] hover:border-b-2 hover:border-[#90C347] transition'
-
-
-
-                            >
-                                Dashboard
-                            </a>
-                        </li>
-                        <li >
-                            <a
-                                href="/contact"
-                                className='text-textColor p-2 uppercase text-[13px] hover:border-b-2 hover:border-[#90C347] transition'
-
-
-
-                            >
-                                Contact
-                            </a>
-                        </li>
-                        <li>
-                            <Link to={"/"}><button className=' px-2  py-2 rounded text-white border bg-primary border-primary text-base'>Appoinments +</button></Link>
-                        </li>
-
-
-                    </ul>
-                </div>
-            </div> */}
 
                 <div className="hidden w-full lg:block md:w-auto" id="navbar-multi-level">
                     <ul className='flex gap-4 items-center justify-between py-6'>
                         <li><Link to="/" className="text-black p-2 capitalize text-[18px] font-medium  transition">Home</Link></li>
-                        <li><span className="text-black p-2 capitalize text-[18px] font-medium  transition">Italian</span></li>
-                        <li><span className="text-black p-2 capitalize text-[18px] font-medium  transition">Indian</span></li>
-                        <li><span className="text-black p-2 capitalize text-[18px] font-medium  transition">Thai</span></li>
+                        <li className="relative menu_it_1"><span className="text-black p-2 capitalize text-[18px] font-medium  transition cursor-pointer">Italian <ExpandMoreIcon style={{ fontSize: 18 }} /></span>
+                            <div className="dropdown_wrapper_1">
+                                <div className="flex items-center text-black justify-between">
+                                    <ul className="mega_item">
+                                        <h3 className="text-black text-lg font-semibold border-b border-[111] mb-4">North Italian</h3>
+                                        <li><a href="">Chinese Popcorn</a></li>
+                                        <li><a href="">English Breakfast</a></li>
+                                        <li><a href="">Chinese Popcorn</a></li>
+                                        <li><a href="">English Breakfast</a></li>
+                                        <li><a href="">Chinese Popcorn</a></li>
+                                        <li><a href="">English Breakfast</a></li>
+                                    </ul>
+                                    <ul className="mega_item">
+                                        <h3 className="text-black text-lg font-semibold border-b border-[111] mb-4">East Italian</h3>
+                                        <li><a href="">Chinese Popcorn</a></li>
+                                        <li><a href="">English Breakfast</a></li>
+                                        <li><a href="">Chinese Popcorn</a></li>
+                                        <li><a href="">English Breakfast</a></li>
+                                        <li><a href="">Chinese Popcorn</a></li>
+                                        <li><a href="">English Breakfast</a></li>
+                                    </ul>
+                                    <ul className="mega_item">
+                                        <h3 className="text-black text-lg font-semibold border-b border-[111] mb-4">West Italian</h3>
+                                        <li><a href="">Chinese Popcorn</a></li>
+                                        <li><a href="">English Breakfast</a></li>
+                                        <li><a href="">Chinese Popcorn</a></li>
+                                        <li><a href="">English Breakfast</a></li>
+                                        <li><a href="">Chinese Popcorn</a></li>
+                                        <li><a href="">English Breakfast</a></li>
+                                    </ul>
 
-                        <li><span className="text-black p-2 capitalize text-[18px] font-medium  transition">Chinese</span></li>
+                                </div>
+                            </div>
+                        </li>
+                        <li className="relative menu_it_2"><span className="text-black p-2 capitalize text-[18px] font-medium  transition cursor-pointer">Indian <ExpandMoreIcon style={{ fontSize: 18 }} /></span>
+                            <div className="dropdown_wrapper_2">
+                                <div className="flex items-center text-black justify-between">
+                                    <ul className="mega_item">
+                                        <h3 className="text-black text-lg font-semibold border-b border-[111] mb-4">North Italian</h3>
+                                        <li><a href="">Chinese Popcorn</a></li>
+                                        <li><a href="">English Breakfast</a></li>
+                                        <li><a href="">Chinese Popcorn</a></li>
+                                        <li><a href="">English Breakfast</a></li>
+                                        <li><a href="">Chinese Popcorn</a></li>
+                                        <li><a href="">English Breakfast</a></li>
+                                    </ul>
+                                    <ul className="mega_item">
+                                        <h3 className="text-black text-lg font-semibold border-b border-[111] mb-4">East Italian</h3>
+                                        <li><a href="">Chinese Popcorn</a></li>
+                                        <li><a href="">English Breakfast</a></li>
+                                        <li><a href="">Chinese Popcorn</a></li>
+                                        <li><a href="">English Breakfast</a></li>
+                                        <li><a href="">Chinese Popcorn</a></li>
+                                        <li><a href="">English Breakfast</a></li>
+                                    </ul>
+                                    <ul className="mega_item">
+                                        <h3 className="text-black text-lg font-semibold border-b border-[111] mb-4">West Italian</h3>
+                                        <li><a href="">Chinese Popcorn</a></li>
+                                        <li><a href="">English Breakfast</a></li>
+                                        <li><a href="">Chinese Popcorn</a></li>
+                                        <li><a href="">English Breakfast</a></li>
+                                        <li><a href="">Chinese Popcorn</a></li>
+                                        <li><a href="">English Breakfast</a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li className="relative menu_it_3"><span className="text-black p-2 capitalize text-[18px] font-medium  transition cursor-pointer">Thai <ExpandMoreIcon style={{ fontSize: 18 }} /></span>
+                            <div className="dropdown_wrapper_3">
+                                <div className="flex items-center text-black justify-between">
+                                    <ul className="mega_item">
+                                        <h3 className="text-black text-lg font-semibold border-b border-[111] mb-4">North Italian</h3>
+                                        <li><a href="">Chinese Popcorn</a></li>
+                                        <li><a href="">English Breakfast</a></li>
+                                        <li><a href="">Chinese Popcorn</a></li>
+                                        <li><a href="">English Breakfast</a></li>
+                                        <li><a href="">Chinese Popcorn</a></li>
+                                        <li><a href="">English Breakfast</a></li>
+                                    </ul>
+                                    <ul className="mega_item">
+                                        <h3 className="text-black text-lg font-semibold border-b border-[111] mb-4">East Italian</h3>
+                                        <li><a href="">Chinese Popcorn</a></li>
+                                        <li><a href="">English Breakfast</a></li>
+                                        <li><a href="">Chinese Popcorn</a></li>
+                                        <li><a href="">English Breakfast</a></li>
+                                        <li><a href="">Chinese Popcorn</a></li>
+                                        <li><a href="">English Breakfast</a></li>
+                                    </ul>
+                                    <ul className="mega_item_3">
+                                        <h3 className="text-black text-lg font-semibold border-b border-[111] mb-4">West Italian</h3>
+                                        <li><a href="">Chinese Popcorn</a></li>
+                                        <li><a href="">English Breakfast</a></li>
+                                        <li><a href="">Chinese Popcorn</a></li>
+                                        <li><a href="">English Breakfast</a></li>
+
+                                        <li><a href="">English Breakfast</a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </li>
+
+                        <li><span className="text-black p-2 capitalize text-[18px] font-medium  transition cursor-pointer">Chinese<ExpandMoreIcon style={{ fontSize: 18 }} /></span></li>
                         <li><Link to="/shop" className="text-black p-2 capitalize text-[18px] font-medium  transition">Shop</Link></li>
                         <li><span className="text-black p-2 capitalize text-[18px] font-medium  transition">Pages</span></li>
 
