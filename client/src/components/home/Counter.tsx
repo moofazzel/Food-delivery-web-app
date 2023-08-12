@@ -1,4 +1,4 @@
-import CountUp from 'react-countup';
+import CountUp from 'react-countup'
 import img1 from '../../assets/countIcons/icon-1.png'
 import img2 from '../../assets/countIcons/icon-2.png'
 import img3 from '../../assets/countIcons/icon-3.png'
