@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom"
 import logo from '../assets/logo_3.avif';
-//import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import { HiOutlineUserCircle } from 'react-icons/hi';
+import { LiaShoppingBagSolid } from 'react-icons/lia';
+import { BiSearch } from 'react-icons/bi';
+import { FaRegHeart } from 'react-icons/fa';
 
 const Navbar = () => {
     // let activeStyle = {
@@ -9,22 +13,22 @@ const Navbar = () => {
     // };
 
     //sticky nav on scroll
-    //sticky nav
-    // const [stickyNav, setStickyNav] = useState(false);
+    // sticky nav
+    const [stickyNav, setStickyNav] = useState(false);
 
-    // useEffect(() => {
-    //     window.onscroll = () => {
-    //         setStickyNav(window.pageYOffset === 0 ? false : true);
-    //         return () => (window.onscroll = null);
-    //     };
-    // }, []);
+    useEffect(() => {
+        window.onscroll = () => {
+            setStickyNav(window.pageYOffset === 0 ? false : true);
+            return () => (window.onscroll = null);
+        };
+    }, []);
     return (
         <div>
-            <nav className={` w-full  top-0 right-0 left-0 z-[10] py-5 md:py-2 text-[#FFF]  flex  items-center justify-between md:mx-auto px-10 md:px-[103px] bottom_border ${stickyNav ? 'bg-white fixed shadow-md shadow-gray-200' : 'bg-white'}`}
+            <nav className={` w-full  top-0 right-0 left-0 z-[10] py-7 md:py-2 text-[#FFF]  flex  items-center justify-between md:mx-auto px-10 md:px-[103px] bottom_border ${stickyNav ? 'bg-white fixed shadow-md shadow-gray-200' : 'bg-white'}`}
 
             >
                 {/* brand logo */}
-                <Link to={"/"}><img className='w-[120px] h-[25px] ' src={logo}></img></Link>
+                <Link to={"/"}><img className='w-[90px] h-[90px] ' src={logo}></img></Link>
 
                 {/* mobile nav */}
                 {/* <div
@@ -136,14 +140,14 @@ const Navbar = () => {
 
                 <div className="hidden w-full lg:block md:w-auto" id="navbar-multi-level">
                     <ul className='flex gap-4 items-center justify-between py-6'>
-                        <li><Link to="/">Home</Link></li>
-                        <li><span>Italian</span></li>
-                        <li><span>Indian</span></li>
-                        <li><span>Thai</span></li>
+                        <li><Link to="/" className="text-black p-2 capitalize text-[18px] font-medium  transition">Home</Link></li>
+                        <li><span className="text-black p-2 capitalize text-[18px] font-medium  transition">Italian</span></li>
+                        <li><span className="text-black p-2 capitalize text-[18px] font-medium  transition">Indian</span></li>
+                        <li><span className="text-black p-2 capitalize text-[18px] font-medium  transition">Thai</span></li>
 
-                        <li><span>Chinese</span></li>
-                        <li><Link to="/shop">Home</Link></li>
-                        <li><span>Pages</span></li>
+                        <li><span className="text-black p-2 capitalize text-[18px] font-medium  transition">Chinese</span></li>
+                        <li><Link to="/shop" className="text-black p-2 capitalize text-[18px] font-medium  transition">Shop</Link></li>
+                        <li><span className="text-black p-2 capitalize text-[18px] font-medium  transition">Pages</span></li>
 
 
                         {/* <li
@@ -235,9 +239,15 @@ const Navbar = () => {
                 </div>
 
                 {/* call to action button */}
-                <Link to={""}><button className='hidden lg:flex items-center px-2  py-2 rounded text-white border bg-primary border-primary text-base'>Appoinments +</button></Link>
-            </nav>
-        </div>
+                <div className="flex items-center justify-around">
+
+                    <span className="text-black"><HiOutlineUserCircle /></span>
+                    <span><LiaShoppingBagSolid /></span>
+                    <span><BiSearch /></span>
+                    <span><FaRegHeart /></span>
+                </div>
+            </nav >
+        </div >
     )
 }
 
