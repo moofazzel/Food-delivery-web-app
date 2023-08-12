@@ -241,10 +241,10 @@ const Navbar = () => {
                 {/* call to action button */}
                 <div className="flex items-center justify-around">
 
-                    <span className="text-black"><HiOutlineUserCircle /></span>
-                    <span><LiaShoppingBagSolid /></span>
-                    <span><BiSearch /></span>
-                    <span><FaRegHeart /></span>
+                    <span className="text-black text-[28px] mr-2 "><HiOutlineUserCircle /></span>
+                    <span className="text-black text-[28px] mr-2 "><LiaShoppingBagSolid /></span>
+                    <span className="text-black text-[28px] mr-2 "><BiSearch /></span>
+                    <span className="text-black text-[24px] mr-2 "><FaRegHeart /></span>
                 </div>
             </nav >
         </div >
