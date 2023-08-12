@@ -1,13 +1,14 @@
-import UpgradeToLatestTest from '../../components/home/UpgradeToLatestTest';
+import Counter from '../../components/home/Counter';
 import SimpleAndDeliciousFood from './SimpleAndDeliciousFood';
 
 const Home = () => {
   return (
     <div>
-      <UpgradeToLatestTest/>
       <SimpleAndDeliciousFood />
+      <Counter />
     </div>
   );
 };
 
 export default Home;
+
