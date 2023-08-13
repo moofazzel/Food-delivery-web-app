@@ -1,7 +1,7 @@
 import Counter from '../../components/home/Counter';
+import UpgradeToLatestTest from '../../components/home/UpgradeToLatestTest';
 import OurProducts from '../../components/home/OurProducts/OurProducts';
 import SimpleAndDeliciousFood from '../../components/home/SimpleAndDeliciousFood';
-import UpgradeToLatestTest from '../../components/home/UpgradeToLatestTest';
 
 const Home = () => {
   return (
@@ -9,6 +9,7 @@ const Home = () => {
       <UpgradeToLatestTest />
       <SimpleAndDeliciousFood />
       <OurProducts />
+      <UpgradeToLatestTest />
       <Counter />
     </div>
   );
