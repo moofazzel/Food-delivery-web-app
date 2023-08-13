@@ -1,20 +1,16 @@
+/* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-
-
-  ],
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    extend: {
-    },
+    extend: {},
     // our colors theme
     colors: {
-      'primary': '#c00a27',
-      'secondary': '#f4b618',
-      'white': '#ffffff',
-      'black': '#3a3a3a',
-      'gray': '#686464',
+      primary: '#c00a27',
+      secondary: '#f4b618',
+      white: '#ffffff',
+      black: '#3a3a3a',
+      gray: '#686464',
     },
 
     container: {
@@ -27,11 +23,7 @@ module.exports = {
         '2xl': '1496px',
       },
     },
-
-
   },
 
   plugins: [],
-
-
-}
+};
