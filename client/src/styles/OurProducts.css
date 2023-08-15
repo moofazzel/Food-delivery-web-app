@@ -1,0 +1,98 @@
+.card {
+  position: relative;
+  background-color: #f1f1f1;
+  overflow: hidden;
+}
+
+.card-top-to-left-border {
+  position: absolute;
+  width: 0px;
+  height: 2px;
+  background-color: #c00a27;
+  transition: 0.5s;
+}
+
+.card:hover .card-top-to-left-border {
+  width: 100%;
+}
+
+.card-top-to-bottom-border {
+  position: absolute;
+  width: 2px;
+  height: 0px;
+  background-color: #c00a27;
+  transition: 0.5s;
+}
+
+.card:hover .card-top-to-bottom-border {
+  height: 100%;
+}
+
+/* color: #c00a27; */
+
+.card-bottom-to-right-border {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0px;
+  height: 2px;
+  background-color: #c00a27;
+  transition: 0.5s;
+}
+
+.card:hover .card-bottom-to-right-border {
+  width: 100%;
+}
+
+.card-bottom-to-top-border {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 2px;
+  height: 0px;
+  background-color: #c00a27;
+  transition: 0.5s;
+}
+
+.card:hover .card-bottom-to-top-border {
+  height: 100%;
+}
+
+.card-left-border {
+  position: absolute;
+  right: 0;
+  width: 0px;
+  height: 2px;
+  background-color: #c00a27;
+  transition: 0.5s;
+}
+
+.card-right-border {
+  position: absolute;
+  left: 0;
+  width: 0px;
+  height: 2px;
+  background-color: #c00a27;
+  transition: 0.5s;
+}
+
+.card:hover .card-left-border {
+  width: 100%;
+}
+
+.card:hover .card-right-border {
+  width: 100%;
+}
+
+.icons-container {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.card:hover .icons-container {
+  opacity: 1;
+}

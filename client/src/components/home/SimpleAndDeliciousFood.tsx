@@ -4,7 +4,6 @@ import paper from '../../assets/Common/paper-design.webp';
 const SimpleAndDeliciousFood = () => {
   return (
     <>
-      <img src={paper} alt="Paper Design" className="mb-[-20px]" />
       <div
         className="h-[500px] font-sans"
         style={{
@@ -31,7 +30,7 @@ const SimpleAndDeliciousFood = () => {
           </div>
         </div>
       </div>
-      <img src={paper} alt="Paper Design" className="mt-[-20px]" />
+      <img src={paper} alt="Paper Design" className="mt-[-20px] w-full" />
     </>
   );
 };
