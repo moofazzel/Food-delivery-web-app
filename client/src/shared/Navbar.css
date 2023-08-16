@@ -1,4 +1,9 @@
-.responsive_menu {}
+.responsive_menu {
+    background: #111 !important;
+    width: 50%;
+    height: 100%;
+    position: relative
+}
 
 button.hamburger_icon {
     background: none;
@@ -7,16 +12,39 @@ button.hamburger_icon {
     font-size: 1.7rem;
     padding: 0.2rem;
     cursor: pointer;
-    color: #000;
+    color: #000 !important;
     position: absolute;
     right: 39px;
+    top: 10px;
     display: none;
 
 
 }
 
+/******detaill nav******/
+.detail_wrapper {
+    width: 300px;
+    height: 700px;
+    overflow-y: hidden;
+}
+
+.detailNav {
+    background: #111 !important;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: -100%;
+    z-index: 9999;
+    top: 0;
+    padding: 4.9rem 0;
+    overflow-x: hidden;
+    text-align: center;
+    transition: 0.7s;
+}
+
+
 .side_nav {
-    background: #fff !important;
+    background: #111 !important;
     width: 50%;
     height: 100%;
     position: fixed;
@@ -27,6 +55,10 @@ button.hamburger_icon {
     overflow-x: hidden;
     text-align: center;
     transition: 0.7s;
+}
+
+.open_detail {
+    right: 0
 }
 
 .side_nav.active {
@@ -64,6 +96,20 @@ ul.mobile_menu {
     color: #f1f1f1;
 }
 
+button.close_btn_2 {
+    position: absolute;
+    right: 29px;
+    top: 0px;
+    background: none;
+    outline: none;
+    border: none;
+    color: #efefef;
+    font-size: 2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 10000000000;
+}
 
 button.close_btn {
     position: absolute;
@@ -72,7 +118,7 @@ button.close_btn {
     background: none;
     outline: none;
     border: none;
-    color: #111;
+    color: #efefef;
     font-size: 2rem;
     padding: 0.5rem;
     cursor: pointer;
@@ -80,7 +126,7 @@ button.close_btn {
 }
 
 .close_btn:hover {
-    color: #222;
+    color: #ddd;
 }
 
 .hide_nav {
@@ -102,7 +148,7 @@ button.close_btn {
     }
 
     button.hamburger_icon {
-        top: 13px
+        top: 51px
     }
 }
 
@@ -116,7 +162,7 @@ button.close_btn {
     }
 
     button.hamburger_icon {
-        top: 13px
+        top: 51px
     }
 }
 
@@ -126,6 +172,6 @@ button.close_btn {
 
 
     button.hamburger_icon {
-        top: 12px
+        top: 50px
     }
 }
