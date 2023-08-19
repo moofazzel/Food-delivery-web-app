@@ -11,6 +11,7 @@ module.exports = {
       white: '#ffffff',
       black: '#3a3a3a',
       gray: '#686464',
+      yellow: "#F4B618"
     },
 
     container: {
@@ -20,7 +21,7 @@ module.exports = {
         md: '728px',
         lg: '984px',
         xl: '1240px',
-        '2xl': '1496px',
+        xxl: '1496px',
       },
     },
   },
