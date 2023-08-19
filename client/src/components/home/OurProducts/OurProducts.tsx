@@ -8,6 +8,8 @@ import Breakfast from './Breakfast';
 import Launch from './Launch';
 import Dinner from './Dinner';
 
+import paper from '../../../assets/Common/paper-design.webp';
+
 interface TabPanelProps {
   children?: React.ReactNode;
   index: number;
@@ -60,42 +62,50 @@ const OurProducts = () => {
   };
 
   return (
-    <div className="container px-4 mt-6 md:mt-0">
-      <div className="w-full text-center mb-12">
-        <h2 className="text-3xl lg:text-5xl text-black mb-6">Our Products</h2>
-        <p className="text-sm lg:text-xl leading-9 text-black">
-          Quam pellentesque nec nam aliquam sem et tortor consequat. Ut placerat
-          orci
-          <br className="hidden md:block" />
-          nulla pellentesque dignissim enim sit amet venenatis.
-        </p>
-      </div>
-      <Box sx={{ width: '100%' }}>
-        <Box
-          sx={{
-            margin: 'auto',
-          }}
-        >
-          <Tabs
-            value={value}
-            onChange={handleChange}
-            aria-label="basic tabs example"
+    <div className="relative py-20">
+      <img
+        src={paper}
+        alt="Paper Design"
+        className=" w-full z-50 absolute -top-[100px] hidden md:block"
+      />
+
+      <div className="container px-4 mt-6 md:mt-0">
+        <div className="w-full text-center mb-12">
+          <h2 className="text-3xl lg:text-5xl text-black mb-6">Our Products</h2>
+          <p className="text-sm lg:text-xl leading-9 text-black">
+            Quam pellentesque nec nam aliquam sem et tortor consequat. Ut
+            placerat orci
+            <br className="hidden md:block" />
+            nulla pellentesque dignissim enim sit amet venenatis.
+          </p>
+        </div>
+        <Box sx={{ width: '100%' }}>
+          <Box
+            sx={{
+              margin: 'auto',
+            }}
           >
-            <Tab label="Breakfast" {...a11yProps(0)} sx={commonStyle} />
-            <Tab label="Launch" {...a11yProps(1)} sx={commonStyle} />
-            <Tab label="Dinner" {...a11yProps(2)} sx={commonStyle} />
-          </Tabs>
+            <Tabs
+              value={value}
+              onChange={handleChange}
+              aria-label="basic tabs example"
+            >
+              <Tab label="Breakfast" {...a11yProps(0)} sx={commonStyle} />
+              <Tab label="Launch" {...a11yProps(1)} sx={commonStyle} />
+              <Tab label="Dinner" {...a11yProps(2)} sx={commonStyle} />
+            </Tabs>
+          </Box>
+          <CustomTabPanel value={value} index={0}>
+            <Breakfast />
+          </CustomTabPanel>
+          <CustomTabPanel value={value} index={1}>
+            <Launch />
+          </CustomTabPanel>
+          <CustomTabPanel value={value} index={2}>
+            <Dinner />
+          </CustomTabPanel>
         </Box>
-        <CustomTabPanel value={value} index={0}>
-          <Breakfast />
-        </CustomTabPanel>
-        <CustomTabPanel value={value} index={1}>
-          <Launch />
-        </CustomTabPanel>
-        <CustomTabPanel value={value} index={2}>
-          <Dinner />
-        </CustomTabPanel>
-      </Box>
+      </div>
     </div>
   );
 };
