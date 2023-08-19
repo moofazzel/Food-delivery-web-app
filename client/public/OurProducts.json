@@ -1,0 +1,38 @@
+[
+  {
+    "img": "https://i.ibb.co/fY6858x/food1.webp",
+    "name": "Delicious Burger",
+    "rating": 4.8,
+    "price": "$9.99"
+  },
+  {
+    "img": "https://i.ibb.co/LS0xHTn/food2.webp",
+    "name": "Spicy Ramen",
+    "rating": 4.5,
+    "price": "$12.99"
+  },
+  {
+    "img": "https://i.ibb.co/RPs6HMv/food3.webp",
+    "name": "Cheese Pizza",
+    "rating": 4.7,
+    "price": "$10.49"
+  },
+  {
+    "img": "https://i.ibb.co/ChhKq8N/food4.webp",
+    "name": "Fresh Salad",
+    "rating": 4.3,
+    "price": "$7.99"
+  },
+  {
+    "img": "https://i.ibb.co/XZN1FbR/food5.webp",
+    "name": "Sushi Platter",
+    "rating": 4.9,
+    "price": "$18.99"
+  },
+  {
+    "img": "https://i.ibb.co/TH0zCF4/food6.webp",
+    "name": "Chocolate Brownie",
+    "rating": 4.6,
+    "price": "$5.49"
+  }
+]

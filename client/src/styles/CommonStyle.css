@@ -1,0 +1,13 @@
+.MuiTabs-indicator {
+  display: none;
+}
+
+.css-heg063-MuiTabs-flexContainer {
+  justify-content: left !important;
+}
+
+@media screen and (max-width: 576px) {
+  .css-heg063-MuiTabs-flexContainer {
+    justify-content: center !important;
+  }
+}
