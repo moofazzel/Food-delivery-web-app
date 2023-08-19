@@ -6,6 +6,8 @@ import icon_8 from '../../assets/icons/icon-8.png';
 import icon_9 from '../../assets/icons/icon-9.webp';
 import icon_10 from '../../assets/icons/icon-10.png';
 
+import paper from '../../assets/Common/paper-design.webp';
+
 interface SpecialMenus {
   title: string;
   description: string;
@@ -42,6 +44,7 @@ const specialMenus: SpecialMenus = [
 function SpecialMenus() {
   return (
     <div
+      className="relative"
       style={{
         backgroundImage: `url(${specialImgBg})`,
         backgroundRepeat: 'repeat',
@@ -49,6 +52,12 @@ function SpecialMenus() {
         position: 'relative',
       }}
     >
+      <img
+        src={paper}
+        alt="Paper Design"
+        className=" w-full z-50 absolute -top-[135px] hidden md:block"
+      />
+
       <div className="container ">
         <div className="flex flex-col lg:flex-row justify-center w-full items-center gap-16 my-20 lg:h-[870px]">
           <img className="xl:w-[40%]" src={specialImg} alt="specialImg" />
@@ -80,6 +89,12 @@ function SpecialMenus() {
           </div>
         </div>
       </div>
+
+      <img
+        src={paper}
+        alt="Paper Design"
+        className=" w-full z-50 absolute -bottom-[135px] hidden md:block"
+      />
     </div>
   );
 }

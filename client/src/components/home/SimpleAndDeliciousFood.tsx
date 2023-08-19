@@ -1,11 +1,10 @@
 import banner from '../../assets/SimpleAndDeliciousFood/banner.webp';
-import paper from '../../assets/Common/paper-design.webp';
 
 const SimpleAndDeliciousFood = () => {
   return (
     <>
       <div
-        className="h-[500px] font-sans"
+        className="h-[600px] py-32"
         style={{
           backgroundImage: `linear-gradient(#00000010, #00000010), url(${banner})`,
           backgroundPosition: 'center',
@@ -30,7 +29,6 @@ const SimpleAndDeliciousFood = () => {
           </div>
         </div>
       </div>
-      <img src={paper} alt="Paper Design" className="mt-[-20px] w-full" />
     </>
   );
 };
