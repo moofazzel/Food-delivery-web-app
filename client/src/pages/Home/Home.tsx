@@ -5,16 +5,17 @@ import OurProducts from '../../components/home/OurProducts/OurProducts';
 import SimpleAndDeliciousFood from '../../components/home/SimpleAndDeliciousFood';
 import BannerSlider from '../../components/bannerSlider/BannerSlider';
 import FlavorfulMenu from '../../components/flavorfulMenu/FlavorfulMenu';
+import SpecialMenus from '../../components/home/SpecialMenus';
 
 const Home = () => {
   return (
     <div>
       <BannerSlider />
-      <UpgradeToLatestTest />
       <InternationalCuisines />
       <UpgradeToLatestTest />
+      <SpecialMenus />
       <SimpleAndDeliciousFood />
-      <UpgradeToLatestTest />
+      <OurProducts />
       <FlavorfulMenu />
       <Counter />
     </div>

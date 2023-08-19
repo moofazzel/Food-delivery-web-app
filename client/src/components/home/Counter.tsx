@@ -19,39 +19,28 @@ const Counter = () => {
         { id: 4, img: img4, text: 'Meals To Go', countEnd: 580 },
     ];
     return (
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-20 gap-4'>
-            {
-                countData.map(data => <div
-                    key={data.id}
-                    className='flex flex-col items-center py-4'
-                >
-                    <img
-                        src={data.img}
-                        loading='lazy'
-                        width={60}
-                        alt=''
+      <>
+        <div className="grid grid-cols-1 gap-4 py-20 md:grid-cols-2 lg:grid-cols-4">
+          {countData.map((data) => (
+            <div key={data.id} className="flex flex-col items-center py-4">
+              <img src={data.img} loading="lazy" width={60} alt="" />
+              <p className="py-4 text-2xl font-semibold text-gray">
+                {data.text}
+              </p>
+              <CountUp start={0} end={data.countEnd} delay={0}>
+                {({ countUpRef }) => (
+                  <div>
+                    <span
+                      className="text-3xl font-semibold text-primary"
+                      ref={countUpRef}
                     />
-                    <p
-                        className='text-2xl font-semibold text-gray py-4'>
-                        {data.text}
-                    </p>
-                    <CountUp
-                        start={0}
-                        end={data.countEnd}
-                        delay={0}>
-                        {({ countUpRef }) => (
-                            <div>
-                                <span
-                                    className='text-3xl font-semibold text-primary'
-                                    ref={countUpRef} />
-                            </div>
-                        )}
-                    </CountUp>
-                </div>)
-            }
-
+                  </div>
+                )}
+              </CountUp>
+            </div>
+          ))}
         </div>
-
+      </>
     );
 };
 
