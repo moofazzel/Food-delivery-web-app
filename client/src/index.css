@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 
+/*********google font**********/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,900;0,1000;1,300&family=Poppins:wght@400;500;600;700&display=swap');
+
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
 .dropdown_wrapper_1,
 .dropdown_wrapper_2,
 .dropdown_wrapper_3 {
@@ -44,4 +52,83 @@ ul.mega_item_3 li a {
     color: #111;
     margin-bottom: 9px;
     display: block;
+}
+
+
+/***********flavor ful menu section**********/
+.cus_b {
+    width: 45%;
+    border-bottom: 1px dashed #666;
+    margin-top: 16px;
+    position: relative;
+    opacity: 1;
+    transition: all 0.45s;
+
+}
+
+.fmenu_card {
+    transition: all .4s;
+}
+
+
+.cus_b:before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 0;
+    border-bottom: 1px solid;
+    bottom: -1px;
+    opacity: 0;
+    transition: all .3s linear;
+}
+
+.fmenu_card:hover .cus_b:before {
+    width: 100%;
+    content: '';
+    position: absolute;
+    height: 1px;
+
+    border-bottom: 1px solid;
+    bottom: -1px;
+
+    transition: all .3s linear;
+    opacity: 1;
+}
+
+/* .fmenu_card:hover .cus_b {
+    opacity: 0
+} */
+
+@media screen and (max-width:1024) {
+    .cus_b {
+        width: 71%;
+
+
+    }
+}
+
+
+@media screen and (max-width:900px) {
+    .cus_b {
+        width: 71%;
+
+
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .cus_b {
+        width: 55%;
+
+
+    }
+}
+
+@media screen and (max-width:576px) {
+    .cus_b {
+        width: 45%;
+
+
+    }
 }
