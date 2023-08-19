@@ -50,16 +50,15 @@ function SpecialMenus() {
       }}
     >
       <div className="container ">
-        <div className="flex justify-center items-center gap-16 my-10 h-[870px]">
-          <div>
-            <img src={specialImg} alt="specialImg" />
-          </div>
+        <div className="flex flex-col lg:flex-row justify-center w-full items-center gap-16 my-20 lg:h-[870px]">
+          <img className="xl:w-[40%]" src={specialImg} alt="specialImg" />
+
           <div>
             <h2 className="font-bold text-[2rem] mb-6 text-black">
               What Makes Our Menus Special ?
             </h2>
             {/* Right menus */}
-            <div className="text-left space-y-8 order-2 md:order-none w-[500px]">
+            <div className="text-left space-y-14 order-2 md:order-none lg:w-[520px]">
               {specialMenus.map((cuisine, index) => (
                 <div key={index} className="flex items-center gap-5 ">
                   <img
