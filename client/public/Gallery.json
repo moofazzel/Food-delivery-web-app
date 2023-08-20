@@ -1,0 +1,50 @@
+[
+  {
+    "id": "01",
+    "title": "Image 1",
+    "name": "gallery1",
+    "img": "https://i.ibb.co/sJC0VYN/gallery1.webp"
+  },
+  {
+    "id": "02",
+    "title": "Image 2",
+    "name": "gallery2",
+    "img": "https://i.ibb.co/jWpFx5r/gallery2.webp"
+  },
+  {
+    "id": "03",
+    "title": "Image 3",
+    "name": "gallery3",
+    "img": "https://i.ibb.co/7th3rvM/gallery3.webp"
+  },
+  {
+    "id": "04",
+    "title": "Image 4",
+    "name": "gallery4",
+    "img": "https://i.ibb.co/mzRJTpQ/gallery4.webp"
+  },
+  {
+    "id": "05",
+    "title": "Image 5",
+    "name": "gallery5",
+    "img": "https://i.ibb.co/Gs1VHcy/gallery5.webp"
+  },
+  {
+    "id": "06",
+    "title": "Image 6",
+    "name": "gallery6",
+    "img": "https://i.ibb.co/1Zybrc8/gallery6.webp"
+  },
+  {
+    "id": "07",
+    "title": "Image 7",
+    "name": "gallery7",
+    "img": "https://i.ibb.co/R99cpZN/gallery7.webp"
+  },
+  {
+    "id": "08",
+    "title": "Image 8",
+    "name": "gallery8",
+    "img": "https://i.ibb.co/VJMkMpT/gallery8.webp"
+  }
+]

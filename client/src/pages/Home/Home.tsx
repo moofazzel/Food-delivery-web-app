@@ -6,6 +6,7 @@ import SimpleAndDeliciousFood from '../../components/home/SimpleAndDeliciousFood
 import BannerSlider from '../../components/bannerSlider/BannerSlider';
 import FlavorfulMenu from '../../components/flavorfulMenu/FlavorfulMenu';
 import SpecialMenus from '../../components/home/SpecialMenus';
+import Gallery from '../../components/home/Gallery';
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <SpecialMenus />
       <SimpleAndDeliciousFood />
       <OurProducts />
+      <Gallery />
       <FlavorfulMenu />
       <Counter />
     </div>

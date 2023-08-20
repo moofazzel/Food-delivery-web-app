@@ -1,5 +1,5 @@
-import OurProductCard from './home/OurProducts/OurProductCard';
-import IOurProducts from '../types/OurProductsType';
+import OurProductCard from './OurProductCard';
+import IOurProducts from '../../../types/OurProductsType';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
