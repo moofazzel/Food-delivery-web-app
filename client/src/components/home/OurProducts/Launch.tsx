@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Carousel from '../../Carousel';
+import Carousel from './Carousel';
 
 const Launch = () => {
   const [products, setProducts] = useState([]);
