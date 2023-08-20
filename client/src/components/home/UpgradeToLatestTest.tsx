@@ -5,7 +5,7 @@ const UpgradeToLatestTest = () => {
   return (
     <>
       <div
-        className="h-full font-sans"
+        className="h-full py-16"
         style={{
           backgroundImage: `linear-gradient(#00000010, #00000010), url(${bg_1})`,
           // backgroundRepeat: 'no-repeat',
